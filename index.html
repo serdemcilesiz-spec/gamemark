@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameMarket</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#111827;
+color:#fff;
+}
+
+header{
+background:#1f2937;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#4ade80;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+.hero{
+padding:80px 20px;
+text-align:center;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.search{
+max-width:700px;
+margin:auto;
+display:flex;
+}
+
+.search input{
+flex:1;
+padding:15px;
+border:none;
+border-radius:8px 0 0 8px;
+font-size:16px;
+}
+
+.search button{
+padding:15px 30px;
+background:#22c55e;
+border:none;
+color:white;
+font-size:16px;
+cursor:pointer;
+border-radius:0 8px 8px 0;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
+}
+
+h2{
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1f2937;
+border-radius:12px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.image{
+height:170px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:70px;
+background:#374151;
+}
+
+.content{
+padding:20px;
+}
+
+.price{
+font-size:24px;
+color:#22c55e;
+margin:10px 0;
+}
+
+button.buy{
+width:100%;
+padding:12px;
+background:#2563eb;
+border:none;
+color:white;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+}
+
+footer{
+background:#1f2937;
+padding:30px;
+margin-top:60px;
+text-align:center;
+color:#9ca3af;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="logo">🎮 GameMarket</div>
+
+<nav>
+<a href="#">Ana Sayfa</a>
+<a href="#">Kategoriler</a>
+<a href="#">Satıcı Ol</a>
+<a href="#">Giriş</a>
+<a href="#">Kayıt</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Dijital Oyun Ürünleri Pazaryeri</h1>
+
+<p>Hesaplar, kodlar ve oyun içi ürünler tek platformda.</p>
+
+<div class="search">
+<input placeholder="Ürün ara...">
+<button>Ara</button>
+</div>
+
+</section>
+
+<div class="container">
+
+<h2>🔥 Popüler Ürünler</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="image">🎮</div>
+<div class="content">
+<h3>Valorant 1000 VP</h3>
+<div class="price">199 ₺</div>
+<button class="buy">Satın Al</button>
+</div>
+</div>
+
+<div class="card">
+<div class="image">🔫</div>
+<div class="content">
+<h3>CS2 Prime Hesap</h3>
+<div class="price">349 ₺</div>
+<button class="buy">Satın Al</button>
+</div>
+</div>
+
+<div class="card">
+<div class="image">⚔️</div>
+<div class="content">
+<h3>Metin2 Yang</h3>
+<div class="price">89 ₺</div>
+<button class="buy">Satın Al</button>
+</div>
+</div>
+
+<div class="card">
+<div class="image">💎</div>
+<div class="content">
+<h3>Brawl Stars Elmas</h3>
+<div class="price">79 ₺</div>
+<button class="buy">Satın Al</button>
+</div>
+</div>
+
+<div class="card">
+<div class="image">🚗</div>
+<div class="content">
+<h3>Rocket League Credits</h3>
+<div class="price">149 ₺</div>
+<button class="buy">Satın Al</button>
+</div>
+</div>
+
+<div class="card">
+<div class="image">🎁</div>
+<div class="content">
+<h3>Steam Random Key</h3>
+<div class="price">39 ₺</div>
+<button class="buy">Satın Al</button>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 GameMarket
+
+</footer>
+
+</body>
+</html>
